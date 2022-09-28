@@ -1,10 +1,10 @@
 #include <iostream>
 
-void my_memcpy(char* arr, char* arr2, size_t count)
+void my_memcpy(void* arr, void* arr2, size_t count)
 {
     int i = 0;
     int size = 0;
-    while (arr[i] != '\0') {
+    while (((char*)arr)[i] != '\0') {
         ++i;
         ++size;
     }
@@ -13,9 +13,9 @@ void my_memcpy(char* arr, char* arr2, size_t count)
     }
     i = 0;
     for (i; i < count - 1; ++i) {
-        arr2[i] = arr[i];
+        ((char*)arr2)[i] = ((char*)arr)[i];
     }
-    arr2[i] = '\0';
+    ((char*)arr2)[i] = '\0';
 }
 
 int main() {
