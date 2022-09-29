@@ -1,13 +1,13 @@
 #include <iostream>
 #include<map>
 
-std::map<int, std::string> mp = {{0,"Blue"},{1,"Yellow"},{2,"Green"},
-                                {3,"Red"},{4,"Black"},{5,"White"},
-                                {6,"Grey"},{7,"Ogange"},{8,"Pink"},
-                                {9,"Purple"},{10,"Brown"}};
+std::map<int, std::string> mp = {{0, "Blue"}, {1, "Yellow"}, {2, "Green"},
+                                {3, "Red"}, {4, "Black"}, {5, "White"},
+                                {6, "Grey"}, {7, "Ogange"}, {8, "Pink"},
+                                {9, "Purple"}, {10, "Brown"}};
 
-enum class colors{
-    Blue ,Yellow ,Green ,Red,
+enum class colors {
+    Blue, Yellow, Green, Red,
     Black, White, Grey, Ogange,
     Pink, Purple, Brown
 };
